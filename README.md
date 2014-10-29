@@ -7,4 +7,4 @@ The list builder gives you a nice input widget for the users to enter a list of 
 
 
 
-![alt tag](https://raw.github.com/henry0sue/ListBuilder/master/screenshot/ListBuilder.png)
+![alt tag](https://raw.github.com/henry0sue/jquery-ui-listbuilder/master/screenshot/listbuilder.png)
