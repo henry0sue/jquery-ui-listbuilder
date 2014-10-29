@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'icomoon';
+    src:url('fonts/icomoon.eot?-wxgn1p');
+    src:url('fonts/icomoon.eot?#iefix-wxgn1p') format('embedded-opentype'),
+    url('fonts/icomoon.woff?-wxgn1p') format('woff'),
+    url('fonts/icomoon.ttf?-wxgn1p') format('truetype'),
+    url('fonts/icomoon.svg?-wxgn1p#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+.icon-close:before {
+    content: "\e602";
+}
+
+.list-container {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0 5px;
+    /*width: 100%; */
+    height: auto !important;
+    border: 1px solid #aaa;
+    background-color: #fff;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(1%, #eeeeee), color-stop(15%, #ffffff));
+    background-image: -webkit-linear-gradient(#eeeeee 1%, #ffffff 15%);
+    background-image: -moz-linear-gradient(#eeeeee 1%, #ffffff 15%);
+    background-image: -o-linear-gradient(#eeeeee 1%, #ffffff 15%);
+    background-image: linear-gradient(#eeeeee 1%, #ffffff 15%);
+    cursor: text;
+}
+
+.list-container .list-item{
+    position: relative;
+    margin: 3px 5px 3px 0;
+    padding: 3px 8px 3px 5px;
+    border: 1px solid #aaa;
+    max-width: 100%;
+    border-radius: 3px;
+    background-color: #eeeeee;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(20%, #f4f4f4), color-stop(50%, #f0f0f0), color-stop(52%, #e8e8e8), color-stop(100%, #eeeeee));
+    background-image: -webkit-linear-gradient(#f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%);
+    background-image: -moz-linear-gradient(#f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%);
+    background-image: -o-linear-gradient(#f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%);
+    background-image: linear-gradient(#f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%);
+    background-size: 100% 19px;
+    background-repeat: repeat-x;
+    background-clip: padding-box;
+    box-shadow: 0 0 2px white inset, 0 1px 0 rgba(0, 0, 0, 0.05);
+    color: #333;
+    line-height: 13px;
+    cursor: default;
+}
+
+.list-container .invalid{
+    color: #fff;
+    background-color: #bb0000;
+    background-image: none;
+}
+
+.list-container li{
+    list-style: none;
+    float: left;
+}
+
+.list-container input[type=text]{
+    margin: 1px 0;
+    padding: 0;
+    height: 25px;
+    outline: 0;
+    border: 0 !important;
+    background: transparent !important;
+    box-shadow: none;
+    color: #999;
+    font-size: 100%;
+    font-family: sans-serif;
+    line-height: normal;
+    border-radius: 0;
+}
+
+.list-item .icon-close{
+    margin-left: 8px;
+    font-size: 8px;
+    color: #666;
+    cursor: pointer;
+}
+
+.list-item.invalid .icon-close{
+    color: #fff;
+}
+
+.list-item .icon-close:hover{
+    color: #0081c2;
+}

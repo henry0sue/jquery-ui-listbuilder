@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="styles/list-builder.css">
+    <style>
+        #list-value-input{
+            min-height: 80px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <form>
+        <label>Enter a list of email addresses: </label>
+        <div id="list-value-input" style="width:400px;"></div>
+        <input type="submit">
+    </form>
+</div>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.js"></script>
+<script src="src/jquery.listbuilder.js"></script>
+<script>
+    $('#list-value-input').listBuilder(
+            {
+                validatorFn: function(email){
+                    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                    return re.test(email);
+                }
+            }
+    );
+
+    $('input[type=submit]').on(
+            'click',
+            function(e){
+                alert($('#list-value-input').listBuilder('values'));
+                e.preventDefault();
+
+            }
+    );
+</script>
+</body>
+</html>
